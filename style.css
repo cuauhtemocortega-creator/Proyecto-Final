@@ -1,0 +1,123 @@
+
+header {
+    background-color: #EDC540;
+    text-align: center;
+    padding: 10px;
+    display: flex; /*en linea*/
+    justify-content: space-between;
+    align-items: center; 
+    position: fixed;  /*fijo*/ 
+    top: 0%; /*espacio de alto si se quita se deja un espacio*/
+    width: 100%; /*Ancho*/
+    margin-right: 20%; /*derecha*/
+    z-index: 1000; /*autoridad*/
+} 
+
+header ul {
+ display: flex;    
+ gap: 55px;  /*separacion de links*/
+ font-size: 17px; /*tamaño*/
+ margin-right: 57px; /*para que no se valla a la derecha*/
+}
+header li { 
+    list-style:none;
+    font-family: 'Montserrat', sans-serif;
+}
+header a {
+  color: rgb(68, 62, 55);        
+  text-decoration: none;
+  font-weight: 700;
+}
+
+header a:hover {   /* cuando paso el raton por encima*/
+  color: rgb(173, 107, 20);       
+}
+header img {   /*logo*/
+  height: 65px;
+}
+.imagen-principal {
+    height: 100vh; /*alto toda la pantalla*/
+    background: url("Imagen-principal-2.0.png") center 80%/ cover no-repeat; 
+    position: relative; /* al contenedor que esta adentro */
+}
+.imagen-principal div { 
+
+  position: absolute;    /* acomodar como yo quiera*/
+  top: 20%;
+  left: 5%;
+  font-family: 'Montserrat', sans-serif;
+  color: #422F1B;
+
+
+
+}
+body {
+margin-top: 85px; /*alto de la imagen*/
+margin-left: 0%; 
+margin-right: 0%;
+
+}
+
+
+  
+
+
+
+
+
+.cards-section {
+background-color: #f4f4f4;
+display: flex;
+justify-content: space-around;
+padding: 50px;
+}
+
+.card {
+background-color: white;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 3px 3px 6px white;
+height: 150px;
+width: 25%;
+text-align: center
+}
+
+
+/* Sección del Plato Estrella */
+.plato-estrella {
+    background-color: #f4f4f4; /* Fondo blanco para resaltar */
+    padding: 60px 20px;
+}
+
+.contenedor-estrella {
+    display: flex;         /* Esto pone los elementos uno al lado del otro */
+    align-items: center;   /* Centra verticalmente el texto con la imagen */
+    max-width: 1000px;     /* Ancho máximo para que no se estire demasiado */
+    margin: 0 auto;        /* Centra todo el bloque en la página */
+    gap: 40px;             /* Espacio entre la imagen y el texto */
+    background-color:;
+}
+
+.columna-imagen img {
+    width: 100%;
+    max-width: 450px;      /* Tamaño máximo de la imagen */
+    border-radius: 15px;   /* Bordes redondeados para un toque moderno */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.columna-texto {
+    flex: 1;               /* Hace que el texto ocupe el resto del espacio */
+    text-align: left;
+}
+
+.columna-texto h2 {
+    color: #d35400;        /* Un color naranja/café para el título */
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.ingredientes {
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+}
