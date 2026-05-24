@@ -63,16 +63,29 @@ margin-right: 0%;
   position: absolute;    /* acomodar como yo quiera*/
   top: 14%;
   left: 3%;
-  font-family: 'Montserrat', sans-serif;
-  color: #0e0c0b;
+  font-family: 'arial', sans-serif;
+  color: #000000;
   line-height: 2;
-  
+}
+.imagen-principal p{
+    font-family:'Inter', sans-serif;
 }
 .imagen-principal h1{
     font-size: 90px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
     font-family:  'Cormorant Garamond';
     line-height: 1;
+    margin-top: 0.5%;
+}
+.imagen-principal h2{
+    font-size: 20px;
+    margin-bottom: 1px;
+    margin-left: 110px;
+    margin-top: 1%;
+    letter-spacing:4px;
+    color: #bb1111;
+    font-weight:550;
+    font-family:'Inter', sans-serif;
 }
 .linea-titulo{
     width:220px;
@@ -90,17 +103,18 @@ margin-right: 0%;
 
     border-radius:20px;
 }
+
 .linea-titulo-arriba{
  display:block;
 
-    width:80px !important; /*da prioridad a este width y lo hago porque no me dejaba */
-    height:4px;
+    width:70px !important; /*da prioridad a este width y lo hago porque no me dejaba */
+    height:3px;
 
      background:#d4a017;
 
      margin-bottom:10px;
      border-radius:20px;
-     transform: translateY(-15px); /* Profe esto lo utilize como ultimo recurso con ayuda de chat gpt */
+     transform: translateY(-25px); /* Profe esto lo utilize como ultimo recurso con ayuda de chat gpt */
 }
 
 .cards-section{
@@ -112,8 +126,12 @@ margin-right: 0%;
     padding:40px;
     font-family:"Outfit";
     color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+   font-family:'Inter', sans-serif;
     font-weight:540;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+z-index: 2;
+position: relative;
 }
 
 .card:nth-child(1){
@@ -129,6 +147,7 @@ margin-right: 0%;
     background:#e4af29;
     color:black;
 }
+
 
 .card h3{   /*es para el titulo de cada div*/
     margin-bottom:15px;
@@ -158,7 +177,7 @@ margin-right: 0%;
 
 .btn-rojo{
     background:#c01818;
-    color:white;
+    color:rgb(238, 236, 236);
     padding:8px 50px;
     text-decoration:none;
     font-weight:bold;
@@ -176,4 +195,73 @@ margin-right: 0%;
     white-space: nowrap;
     border-radius:5px;
 }
+.menu-comida{
+    background:#f8edd8;
+    padding:80px 10%;
+}
 
+.titulo-menu{
+    text-align:center;
+    font-size:55px;
+    margin-bottom:50px;
+
+    font-family:'Cormorant Garamond', serif;
+    color:#422F1B;
+    margin-top: 0%;
+}
+
+.menu-grid{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+}
+
+.item-menu{
+    background:white;
+    width:320px;
+
+    border-radius:25px;
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.item-menu:hover{
+    transform:translateY(-10px);
+}
+
+.item-menu img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.item-menu h3{
+    font-size:28px;
+    padding:20px 20px 10px;
+
+    color:#422F1B;
+}
+
+.item-menu p{
+    padding:0 20px;
+
+    line-height:1.7;
+
+    font-family:'Inter', sans-serif;
+
+    color:#555;
+}
+
+.item-menu span{
+    display:block;
+
+    padding:20px;
+
+    font-size:25px;
+    font-weight:700;
+
+    color:#b51515;
+}
