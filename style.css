@@ -55,26 +55,53 @@ margin-right: 0%;
 }
 .imagen-principal {
     height: 100vh; /*alto toda la pantalla*/
-    background: url("Imagen-principal-2.0.png") center 80%/ cover no-repeat; 
+    background: url("fondo.png") center 80%/ cover no-repeat; 
     position: relative; /* al contenedor que esta adentro */
 }
 .imagen-principal div { 
   width: 40%;
   position: absolute;    /* acomodar como yo quiera*/
-  top: 15%;
+  top: 14%;
   left: 3%;
   font-family: 'Montserrat', sans-serif;
-  color: #422F1B;
+  color: #0e0c0b;
   line-height: 2;
   
 }
 .imagen-principal h1{
     font-size: 90px;
-    margin-bottom: 8px;
+    margin-bottom: 70px;
     font-family:  'Cormorant Garamond';
     line-height: 1;
 }
+.linea-titulo{
+    width:220px;
+    height:5px;
 
+    background: linear-gradient(
+        to right,
+        black 33.3%,
+        #b51515 33.3% 66.6%,
+        #d4a017 66.6%
+    );
+
+    margin-top:115px;
+    margin-bottom:30px;
+
+    border-radius:20px;
+}
+.linea-titulo-arriba{
+ display:block;
+
+    width:80px !important; /*da prioridad a este width y lo hago porque no me dejaba */
+    height:4px;
+
+     background:#d4a017;
+
+     margin-bottom:10px;
+     border-radius:20px;
+     transform: translateY(-15px); /* Profe esto lo utilize como ultimo recurso con ayuda de chat gpt */
+}
 
 .cards-section{
     display:flex;
@@ -84,14 +111,14 @@ margin-right: 0%;
     flex:1; /* la verdad es todo raro ese flex pero si uno lo quita pues deja espacio y el flex es para acomodar*/
     padding:40px;
     font-family:"Outfit";
-    color: #ffbf1f;
+    color: #ffffff;
     font-family: 'Montserrat', sans-serif;
-    
+    font-weight:540;
 }
 
 .card:nth-child(1){
     background:black;
-    
+      
 }
 
 .card:nth-child(2){
@@ -107,30 +134,46 @@ margin-right: 0%;
     margin-bottom:15px;
     font-size:25px;
 }
+.amarillo2 {
+    color:#ffbf1f
+}
+.amarillo {
+    color:#ffbf1f
+}
+.negro {
+    color:#0e0c0b
+}
+.negro2 {
+    color:#0e0c0b
+}
+.card p{
+    line-height:1.8;
+}
 .botones{
     display:flex;
     gap:20px;
-    margin-top:300px;
-    margin-left:1px;
-
+    margin-top:330px;
     
 }
 
 .btn-rojo{
     background:#c01818;
     color:white;
-    padding:18px 80px;
+    padding:8px 50px;
     text-decoration:none;
     font-weight:bold;
     display: inline-block;
     white-space: nowrap;
+    border-radius:5px;
 }
 
 .btn-dorado{
     border:2px solid #d4a017;
     color:#d4a017;
-    padding:18px 80px;
+    padding:8px 50px;
     text-decoration:none;
     font-weight:bold;
     white-space: nowrap;
+    border-radius:5px;
 }
+
