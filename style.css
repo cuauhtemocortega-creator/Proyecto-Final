@@ -42,6 +42,7 @@ body {
 margin-top: 85px; /*alto de la imagen*/
 margin-left: 0%; 
 margin-right: 0%;
+background-color: rgb(36, 36, 36);
 }
 .linea-alemania{
     height:50px;
@@ -130,8 +131,8 @@ margin-right: 0%;
     font-weight:540;
     text-align: center;
     box-shadow: 0 15px 40px rgba(0,0,0,0.25);
-z-index: 2;
-position: relative;
+    z-index: 2;
+    position: relative;
 }
 
 .card:nth-child(1){
@@ -229,7 +230,7 @@ position: relative;
 }
 
 .item-menu:hover{
-    transform:translateY(-10px);
+    transform:translateY(-20px);
 }
 
 .item-menu img{
@@ -264,4 +265,69 @@ position: relative;
     font-weight:700;
 
     color:#b51515;
+}
+
+.footer {
+background-color: rgb(36, 36, 36);
+display: flex;
+margin-top: 10px;
+    justify-content: space-around;
+    color: #f8edd8;
+text-align: center;
+}
+.linea{
+    width: 1px;
+    height: 220px;
+    background: rgba(100, 98, 96, 0.507);
+
+}
+.info {
+    color: rgba(255, 255, 255, 0.705);
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: rgba(255, 255, 255, 0.705);
+}
+.info-contacto{
+    display: flex;
+    gap: 40px;
+    text-align: right;
+}
+.footer a{
+    color: rgba(255, 255, 255, 0.705);   
+  text-decoration: none;
+  font-weight: 700;
+}
+.terminos-- {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.Horarios{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    color:rgba(255,255,255,0.705);
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+
+.horario-info{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.horario-info p{
+    margin:0;
+    font-weight:bold;
+    color: rgba(255, 255, 255, 0.705);   
+}
+
+.horario-info span{
+    color:rgba(255,255,255,0.705);
 }

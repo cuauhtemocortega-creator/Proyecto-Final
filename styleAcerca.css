@@ -1,0 +1,42 @@
+
+header {
+    background-color: rgb(36, 35, 35);
+    text-align: center;
+    padding: 10px;
+    display: flex; /*en linea*/
+    justify-content: space-between;
+    align-items: center; 
+    position: fixed;  /*fijo*/ 
+    top: 0%; /*espacio de alto si se quita se deja un espacio*/
+    width: 100%; /*Ancho*/
+    margin-right: 20%; /*derecha*/
+    z-index: 1000; /*autoridad*/
+    
+} 
+
+header ul {
+ display: flex;    
+ gap: 55px;  /*separacion de links*/
+ font-size: 17px; /*tamaño*/
+ margin-right: 57px; /*para que no se valla a la derecha*/
+}
+header li { 
+    list-style:none;
+    font-family: 'Montserrat', sans-serif;
+}
+header a {
+  color: rgba(255, 255, 255, 0.904);        
+  text-decoration: none;
+  font-weight: 700;
+}
+
+header a:hover {   /* cuando paso el raton por encima*/
+  color: rgb(250, 173, 73);       
+}
+header img {   /*logo*/
+  height: 80px;
+  margin-left:10px;
+}
+body {
+  background-color: #f8edd8;
+}
