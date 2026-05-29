@@ -56,7 +56,7 @@ background-color: rgb(36, 36, 36);
 }
 .imagen-principal {
     height: 100vh; /*alto toda la pantalla*/
-    background: url("fondo.png") center 80%/ cover no-repeat; 
+    background: url("../img/fondo.png") center 80%/ cover no-repeat; 
     position: relative; /* al contenedor que esta adentro */
 }
 .imagen-principal div { 
